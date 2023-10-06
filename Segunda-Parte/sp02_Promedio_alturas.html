@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Ejercicio #19</title>
+            <meta charset="UTF-8">
+    </head>
+    <Body>
+
+    <!--Se ingresan un conjunto de 5 alturas
+        de personas por teclado. Mostrar la altura promedio de las personas.-->
+
+        <script>
+
+            let x = 1;
+            let alturas;
+            let promedio = 0;
+            let sumaAltura = 0;
+
+            while(x <= 5){
+                alturas = parseFloat(prompt('Ingresa la altura de la persona '+ x + ':'));
+
+                sumaAltura = sumaAltura + alturas;
+                promedio = sumaAltura / 5;
+
+                x = x + 1;
+
+            }
+
+        
+            document.write('El promedio de las alturas ingresadas es: ');
+            document.write(promedio);
+
+            document.write('<br>');
+
+        </script>
+
+     
+
+    </Body>
+</html>

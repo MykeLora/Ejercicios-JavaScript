@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Ejercicio #8</title></head>
+      <meta charset="UTF-8">
+
+    <body>
+    <!-- Se ingresan tres notas
+         de un alumno, si el promedio es mayor o igual a 4 mostrar un mensaje 'regular', sino 'reprobado'. -->
+        <script>
+
+        let nota1 = parseInt(prompt('Ingresa la primer nota: '));
+        let nota2 = parseInt(prompt('Ingresa la segunda nota: '));
+        let nota3 = parseInt(prompt('Ingresa la tercel nota: '));
+
+        let sumaNota = nota1 + nota2 + nota3;
+        let promedio = sumaNota / 3;
+
+        if(promedio >= 4){
+            document.write('El estudiante es regular.')
+        }else{
+            document.write('Estudiante reprobado.')
+        }
+
+        </script>
+    </body>
+</html>

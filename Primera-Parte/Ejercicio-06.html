@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Ejercicio #6</title></head>
+      <meta charset="UTF-8">
+
+    <body>
+    <!-- Se debe desarrollar un programa que pida el ingreso del precio de un
+         artículo y la cantidad que lleva el cliente. Mostrar lo que debe abonar
+         el comprador (Ingresar por teclado un precio sin decimales,
+         es decir un entero: 2, 7, 90 etc.) -->
+        <script>
+
+            let precio;
+            let cantidad;
+            let abonoFinal;
+
+            precio = prompt('Ingresa el precio del articulo: ');
+            cantidad = prompt('Ingresa la cantidad del articulo: ')
+
+            abonoFinal = parseInt(precio) * parseInt(cantidad);
+
+            document.write('El cliente debe abonar: '+abonoFinal);
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Ejercicio #7</title></head>
+      <meta charset="UTF-8">
+
+    <body>
+    <!-- Solicitar que se ingrese dos veces una clave. Mostrar un mensaje si son iguales (tener en
+         cuenta que para ver si dos variables tienen el mismo valor
+         almacenado debemos utilizar el operador ==) -->
+        <script>
+
+            let clave1;
+            let clave2;
+
+            clave1 = prompt('Ingresa tu contraseña: ');
+            clave2 = prompt('Confirma tu contraseña: ');
+
+            if(clave1 == clave2){
+                document.write('Bienvenido usuario!');
+            }else{
+                document.write('Contraseña incorrecta.');
+            }
+        </script>
+    </body>
+</html>

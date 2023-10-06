@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Ejercicio #15</title></head>
+      <meta charset="UTF-8">
+
+    <body>
+    <!-- Solicitar el ingreso alguna de estas palabras (casa, mesa, perro, gato) 
+        luego mostrar la palabra traducida en inglés.
+         Es decir, si se ingresa 'casa' debemos mostrar el texto 'house' en la página. -->
+        <script>
+            let palabra = prompt('Ingresa algunas de estas palabras para traducirlas (casa, mesa, perro, gato)');
+
+                switch(palabra){
+                    case 'casa':
+                        document.write('House');
+                        break;
+                    
+                    case 'mesa':
+                        document.write('Table');
+                        break;
+
+                    case 'perro':
+                        document.write('Dog');
+                        break;
+                        
+                    case 'gato':
+                        document.write('Cat');
+                        break;
+                        
+                    default:
+                        document.write('Debe ingresar estas palabras (casa, mesa, perro, gato)');
+   
+                }
+
+
+        </script>
+    </body>
+</html>

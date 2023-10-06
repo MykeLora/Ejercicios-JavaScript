@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Ejercicio #19</title>
+            <meta charset="UTF-8">
+    </head>
+    <Body>
+
+    <!--Escribir un programa que lea 10 notas de alumnos y nos
+    informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.-->
+
+        <script>
+
+            let x = 1;
+            let notaMayor7 = 0;
+            let notaMenor7 = 0;
+
+             while (x <= 10) {
+                notas = parseInt(prompt('Ingresa la nota ' + x + ':'));
+
+                if (notas >= 7) {
+                    notaMayor7 = notaMayor7 + 1;
+                } else {
+                     notaMenor7 = notaMenor7 + 1;
+                }
+                x = x + 1;
+             }
+
+            document.write('Estudiantes con notas mayores o iguales a 7: ');
+            document.write(notaMayor7);
+
+            document.write('<br>');
+
+            document.write('Estudiantes con notas menores a 7: ');
+            document.write(notaMenor7);
+           
+        </script>
+
+     
+
+    </Body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Ejercicio #11</title></head>
+      <meta charset="UTF-8">
+
+    <body>
+    <!--Escribir un programa que pida ingresar la coordenada de un punto en el plano, es decir dos valores enteros x e y.
+        Posteriormente imprimir en pantalla en qué cuadrante se ubica dicho punto. (1º Cuadrante si x > 0 Y y > 0 
+        , 2º Cuadrante: x < 0 Y y > 0, etc.)-->
+        <script>
+                let X = parseInt(prompt('Ingrese el valor de la coordenada X: '));
+                let Y = parseInt(prompt('Ingrese el valor de la coordenada Y: '));
+
+                if (X > 0 && Y > 0) {
+                    document.write('El punto se encuentra en el primer cuadrante.');
+                } else if (X < 0 && Y > 0) {
+                    document.write('El punto se encuentra en el segundo cuadrante.');
+                } else if (X < 0 && Y < 0) {
+                    document.write('El punto se encuentra en el tercer cuadrante.');
+                } else {
+                document.write('El punto se encuentra en el cuarto cuadrante o en el origen.');
+            }
+
+        </script>
+    </body>
+</html>

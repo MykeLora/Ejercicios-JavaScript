@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Ejercicio #10</title></head>
+      <meta charset="UTF-8">
+
+    <body>
+    <!-- Confeccionar un programa que permita cargar un número entero
+         positivo de hasta tres cifras y muestre un mensaje indicando si tiene 1, 2, o 3 cifras. -->
+        <script>
+
+           let numero = parseInt(prompt('Digita un número mayor a " 0 ": '));
+
+           if(numero > 0 && numero <10){
+                document.write('El numero digitado tiene un digito.');
+           }else if(numero > 10 && numero <= 99){
+                document.write('El numero digitado contiene dos digitos.');
+           }else if (numero <= 999 ){
+                document.write('El numero digitado contiene tres digitos.')
+           }else{
+            document.write('El numero fuera de rango.')
+           }
+
+        </script>
+    </body>
+</html>

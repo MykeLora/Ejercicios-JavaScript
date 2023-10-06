@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+      <head><title>Ejercicio #9</title></head>
+      <meta charset="UTF-8">
+
+    <body>
+    <!-- Se ingresan por teclado tres números, si todos los valores ingresados
+         son menores a 10,
+         imprimir en la página la leyenda ' Todos los números son menores a diez'. -->
+        <script>
+
+           let num1 = parseInt(prompt('Ingresa el primer número:'));
+           let num2 = parseInt(prompt('Ingresa el segundo número:'));
+           let num3 = parseInt(prompt('Ingresa el tercel número:'));
+
+           if(num1 < 10 && num2 < 10 && num3 < 10){
+              document.write('Leyenda, todos los números ingresados son menores a diez.');
+           }else{
+              document.write('Los numeros ingresados son distintos.');
+           }
+        </script>
+    </body>
+</html>

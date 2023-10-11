@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Ejercicio #19</title>
+            <meta charset="UTF-8">
+    </head>
+    <Body>
+
+    <!--Desarrollar un programa que permita cargar 5 números enteros y luego nos informe cuántos valores
+         fueron pares y cuántos impares.
+        Emplear el operador "%" en la condición de la estructura condicional.
+	    if (valor%2==0)
+         El operador "%" retorna el resto de la división valor / 2. Por ejemplo:
+        12 % 2, retorna 0; 13 % 2, retorna 1, porque el resto de dividir 13 en 2 es 1..-->
+
+        <script>
+
+            let x = 0;
+            let numerospar = 0;
+            let valor;
+
+
+            while(x <= 5){
+                valor = parseInt(prompt('Ingresa los valores: '));
+
+                if(valor %2==0){
+                    numerospar = numerospar + 1;
+                }
+                x = x + 1;
+
+            }
+            document.write('Cantidad de numeros pares en la secuencia: '+ numerospar);
+
+
+        
+
+        </script>
+
+     
+
+    </Body>
+</html>

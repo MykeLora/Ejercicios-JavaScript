@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Ejercicio #19</title>
+            <meta charset="UTF-8">
+    </head>
+    <Body>
+
+    <!--En una empresa trabajan 5 empleados cuyos sueldos oscilan entre $100 y $500,
+        realizar un programa que lea los sueldos que cobra cada empleado e informe
+        cuántos empleados cobran entre $100 y $300 y cuántos cobran más de $300.
+        Además el programa deberá informar el importe que gasta la empresa en
+         sueldos al personal.-->
+
+        <script>
+
+            let sueldos;
+            let nomina = 0;
+            let sueldosmenor = 0;
+            let sueldosmayor = 0;
+            let x = 0;
+
+            while(x < 5){
+                sueldos = parseFloat(prompt('Ingresa los sueldos:'));
+                
+                if(sueldos >= 100 && sueldos < 300){
+                    sueldosmenor += 1; 
+                }else if(sueldos > 300 && sueldos <= 500){
+                    sueldosmayor += 1; 
+                }
+                nomina = nomina + sueldos;
+
+                x = x + 1;
+            }
+            document.write('Los empleados que cobran sueldos entre (100 y 300) :'+ sueldosmenor);
+            document.write('<br>');
+            document.write('Los empleados que cobran sueldos entre (300 y 500) :'+ sueldosmayor);
+            document.write('<br>');
+
+            document.write('Nomina de los empleados :'+ nomina);
+          
+
+        </script>
+
+     
+
+    </Body>
+</html>

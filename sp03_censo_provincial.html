@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html >
+    <head>
+            <title>Ejercicios</title>
+            <meta charset="UTF-8">
+    </head>
+    <Body>
+
+    <!--Se realizó un censo provincial y se desea procesar la información obtenida en dicho censo.
+         De cada una de las personas censadas se tiene la siguiente información:
+          número de documento, edad y sexo ('femenino' o 'masculino')
+        Se pide confeccionar un programa que lea los datos de cada persona censada
+         (para finalizar ingresar el valor cero en el número de documento) e informar:
+ 
+        a)	Cantidad total de personas censadas.
+        b)	Cantidad de varones.
+        c)	Cantidad de mujeres.
+        d)	Cantidad de varones cuya edad varía entre 16 y 65 años.-->
+
+        <script>
+
+            let nombre;
+            let edad;
+            let nurdocumento;
+            let cantidadtotal = 0;
+            let cantvarones = 0;
+            let cantmujeres = 0;
+            let cantvaronesvariante = 0;
+
+            do{
+                if(nurdocumento > 0){
+
+                nombre = prompt('Ingresa el nombre del censado: ');
+                edad = parseInt(prompt('Ingresa la edad: '));
+                sexo = prompt('Ingresa el sexo del censado: ');
+                }
+
+                if(sexo == "masculino"){
+                    cantvarones = cantvarones + 1;
+                }else if(sexo == "femenino"){
+                        cantmujeres = cantidadtotal + 1;
+                }else if (cantvarones >= 16 && cantvarones <= 65){
+                    cantvaronesvariante = cantvaronesvariante + 1;
+                }
+
+                document.write('La cantidad de personas censadas es: '+cantidadtotal);
+                document.write('<br>');
+
+                document.write('La cantidad de varones: '+cantvarones);
+                document.write('<br>');
+
+                document.write('La cantidad de mujeres: '+cantmujeres);
+                document.write('<br>');
+
+                document.write('La cantidad de varones segun el rango de edad(16 - 65): '+cantvaronesvariante);
+                document.write('<br>');
+                
+                cantidadtotal = cantidadtotal + 1;
+            
+                document.write("<br>");
+
+            }while(nurdocumento > 0);
+            
+            
+        
+        </script>
+
+     
+
+    </Body>
+</html>

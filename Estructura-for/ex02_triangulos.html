@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Realizar un programa que lea los lados de 4 triángulos, e informar:
+    a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales),
+    isósceles (dos lados iguales), o escaleno (ningún lado igual)
+    b) Cantidad de triángulos de cada tipo.
+    c) Tipo de triángulo del que hay menor cantidad. -->
+    <script>
+
+        let lado1,lado2,lado3;
+        let equilatero = 0;
+        let isósceles = 0; 
+        let escaleno = 0;
+     
+
+        for(let x = 1 ; x < 4; x++ ){
+            lado1 = parseInt(prompt('Ingresa el primer lado: '));
+            lado2 = parseInt(prompt('Ingresa el segundo lado: '));
+            lado3 = parseInt(prompt('Ingresa el tercel lado: '));
+
+            if (lado1 == lado2 && lado1 == lado3){
+                console.log('Equilatero');
+                equilatero++;
+               
+            }else{
+                if(lado2 == lado1 || lado2 == lado3){
+                    console.log('Isósceles');
+                    isósceles++;
+                   
+                }else{
+                    console.log('Escaleno');
+                    escaleno++;
+                    
+                }
+                
+            }
+        }
+       
+        document.writeln('La cantidad de tríangulo equilatero: '+ equilatero);
+        document.writeln('La cantidad de tríangulo escaleno: '+ escaleno);
+        document.writeln('La cantidad de tríangulo isóscele: '+ isósceles);
+        
+        if (equilatero < isósceles && equilatero < escaleno) {
+            document.write('Se ingresaron menos triángulos equiláteros');
+        } else {
+            if (isósceles < escaleno) {
+                document.write('Se ingresaron menos triángulos isósceles');
+            } else {
+                document.write('Se ingresaron menos triángulos escalenos');
+            }
+
+        }
+
+    </script>
+</body>
+</html>

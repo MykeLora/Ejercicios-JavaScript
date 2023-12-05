@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let suma = 0;
+        let x, valores;
+
+        for(x = 0; x <= 10; x++ ){
+
+            valores = parseInt(prompt('Ingresa el número ', x , ' :' ));
+
+            if (x >= 5 ){
+                suma = suma + valores;
+            }
+        }
+
+       console.log('La suma de los últimos cinco números ingresado es: '+ suma + ' ');
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function muestraNumeroMenor(num1,num2,num3){
+            if(num1 < num2 && num1 < num3){
+                document.write('El número menor de los tres es: '+ num1);
+            }else{
+                if(num2 < num1 && num2 < num3){
+                    document.write('El número menor de los tres argumentos es: '+ num2);
+                }else{
+                    document.write('El número menor de los tres argumentos es: '+ num3);
+                }
+            }
+        }
+        let valor1 = parseInt(prompt('Ingresa el primer número: '));
+        let valor2 = parseInt(prompt('Ingresa el segundo  número: '));
+        let valor3 = parseInt(prompt('Ingresa el tercel número: '));
+
+        muestraNumeroMenor(valor1,valor2,valor3);
+    </script>
+</body>
+</html>

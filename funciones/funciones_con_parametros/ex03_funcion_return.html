@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function RetornoMayor(num1, num2, num3){
+            if (num1 > num2 && num1 > num3){
+                return num1;
+            }else{
+                if(num2 > num1 && num2 > num3){
+                    return num2;
+                }else{
+                    return num3
+                }
+            }
+        }
+
+
+        let num = RetornoMayor(12,10,154);
+        console.log("El número mayor de los tres es:" +num);
+
+    </script>
+</body>
+</html>

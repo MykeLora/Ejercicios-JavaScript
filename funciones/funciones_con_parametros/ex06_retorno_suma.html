@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumaNumeros(num1,num2,num3,num4,num5){
+            let suma = num1 + num2 + num3 + num4 + num5;
+
+            return suma;
+        }
+
+        let valor1 = parseInt(prompt('Ingrese el primer número: '));
+        let valor2 = parseInt(prompt('Ingrese el segundo número: '));
+        let valor3 = parseInt(prompt('Ingrese el tercel número: '));
+        let valor4 = parseInt(prompt('Ingrese el cualto número: '));
+        let valor5 = parseInt(prompt('Ingrese el quinto número: '));
+
+        let sumatoria = sumaNumeros(valor1,valor2,valor3,valor4,valor5);
+
+        document.write('La sumatoria de los números dado es: '+sumatoria);
+    </script>
+</body>
+</html>

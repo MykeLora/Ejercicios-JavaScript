@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Confeccionar un programa que muestre en que cuatrimestre del año nos encontramos.
+        Para esto obtener el mes.-->
+    <script>
+        function Muestracuatrimestre(){
+            var mes = new Date();
+
+            if(mes.getMonth() >= 1 && mes.getMonth() <= 4 ){
+                document.write('Estamos en el primer cuatrimestre del año.');
+            }else{
+                if(mes.getMonth() > 4 && mes.getMonth() <= 8){
+                    document.write('Estamos en el segundo cuatrimestre del año.');
+                }else{
+                    document.write('Estamos en el tercel cuatrimestre del año.');
+                }
+            }
+
+        }
+        Muestracuatrimestre();
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         
+        function sumaVectores(v1,v2){
+           
+            if(v1.length != v2.length){
+                return 'Los vectores deben tener la misma longitud para realizar la suma';
+            }
+
+            let VectorR = [];
+            for(let x = 0; x < v1.length; x++){
+                VectorR[x] = v1[x] + v2[x]; 
+            }
+
+            return VectorR;
+        }
+         
+
+        function productoPunto(v1,v2){
+            if(v1.length != v2.length){
+                return 'Los vectores deben tener la misma longitud para realizar la operación';
+            }
+
+            let vectorP = [];
+
+            for(let i = 0; i < v1.length; i++ ){
+                vectorP[i] = v1[i] * v2[i];
+            }
+            return vectorP;
+        }
+
+        function magnitudVector(v){
+            let sumaCuadrados = 0;
+
+            for(let i = 0; i < v.length; i++ ){
+                sumaCuadrados += v[i] ** 2;
+            }
+            return Math.sqrt(sumaCuadrados);
+        }
+
+        let vector1 = [1,5,6,9,20]
+        let vector2 = [8,3,6,0,12]
+        let magnitud = magnitudVector(vector2);
+        
+        document.write('La suma de cada componente en los vectores: ', sumaVectores(vector1,vector2));
+        document.write('<br>');
+        document.write('El producto punto de cada componente en los vectores: ', productoPunto(vector1,vector2));
+        document.write('<br>');
+        document.write('La magnitud del vector es: ', magnitud);
+
+    </script>
+</body>
+</html>

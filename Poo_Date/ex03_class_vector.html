@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Desarrollar un programa que permita ingresar un vector de 8 elementos, e informe:
+        El valor acumulado de todos los elementos del vector.
+        El valor acumulado de los elementos del vector que sean mayores a 36.
+        Cantidad de valores mayores a 50. 
+     -->
+    <script>
+        
+        function CargaVector(vector){
+
+            let acumuladoTotal = 0;
+            let acumuladoMayoresA36 = 0;
+            let cantidadMayoresA50 = 0;
+
+            for(let i = 0; i < vector.length; i++){
+                acumuladoTotal += vector[i];
+                
+
+                if(vector[i] > 36){
+                    acumuladoMayoresA36 += vector[i];
+                }
+
+                if(vector[i] > 50){
+                    cantidadMayoresA50++;
+                }
+
+            }
+
+            document.write(`Valor acumulado total: ${acumuladoTotal}`);
+            document.write('<br>');
+            document.write(`Valor acumulado de elementos mayores a 36: ${acumuladoMayoresA36}`);
+            document.write('<br>');
+            document.write(`Cantidad de elementos mayores a 50: ${cantidadMayoresA50}`);
+        }
+        
+        let myvector = [];
+
+        for(let i = 0; i < 8; i++){
+            let element =parseFloat(prompt(`Ingresa el emento ${i + 1}`));
+
+            myvector.push(element);
+        }
+
+        CargaVector(myvector);
+
+
+    </script>
+    
+</body>
+</html>

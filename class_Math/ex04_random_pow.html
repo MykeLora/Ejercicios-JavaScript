@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Escribe un programa en JavaScript que genere tres números
+    aleatorios entre 1 y 10, los eleve al cuadrado y muestre el resultado.-->
+
+    <script>
+        let num1 = parseInt(Math.random() * 10) + 1;
+        let num2 = parseInt(Math.random() * 10) + 1;
+        let num3 = parseInt(Math.random() * 10) + 1;
+
+        let resultado1 = Math.pow(num1, 2);
+        let resultado2 = Math.pow(num2, 2);
+        let resultado3 = Math.pow(num3, 2);
+
+        console.log('El resultado de elevar al cuadrado ',num1, ' es: ', resultado1);
+        console.log('El resultado de elevar al cuadrado ',num2, ' es: ', resultado2);
+        console.log('El resultado de elevar al cuadrado ',num3, ' es: ', resultado3);
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Solicita al usuario que ingrese una frase y reemplaza una palabra específica por otra.-->
+    <script>
+        let palabra = prompt('Ingresa una frase o poesia: ');
+
+        console.log(`Esta es la palabra completa: ${palabra}\n`);
+        console.log(palabra.replace(palabra.slice(0, 6), ' Maycol'));
+        
+    </script>
+</body>
+</html>

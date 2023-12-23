@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 100px;
+    }
+    div{
+        border: 3px solid black;
+        font-size: 24px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    button{
+        color: rgba(217, 215, 215, 0.964);
+        margin-bottom: 80px;
+        background-color: rgb(47, 255, 54);
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+    button:hover{
+        color: rgba(14, 12, 12, 0.829);
+
+    }
+</style>    
+<body>
+    <!--Crear un formulario con tres botones con las leyendas "1", "2" y "3".
+        Mostrar un mensaje indicando qué botón se presionó
+    -->
+
+    <header>
+        <h1>Botones de leyendas</h1>
+    </header>
+
+    <div class="container-m3">
+       <form >
+            <button onclick="primerboton()">Legent 1</button>
+            <button onclick="segundoboton()">Legent 2</button>
+            <button onclick="tercelboton()">Legent 3</button>
+       </form>
+
+
+    </div>
+    <script>
+
+        function primerboton(){
+            alert('Haz presionado el primer boton');
+        }
+
+        function segundoboton(){
+            alert('Haz presionado el segundo boton');
+        }
+
+        function tercelboton(){
+            alert('Haz presionado el tercel boton');
+        }
+
+    </script>
+</body>
+</html>

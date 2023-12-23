@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Numérico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        #contador {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button{
+            color: silver;
+            margin-bottom: 20px;
+            background-color: rgba(0, 126, 128, 0.674);
+            border-radius: 10px;
+            margin-right: auto;
+    
+        }
+        button:hover{
+            color: rgba(14, 12, 12, 0.829);
+
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contador Numérico</h1>
+    </header>
+    
+
+    <main>
+      <div><p id="contador">0</p></div>
+    </main> 
+
+    <button onclick="incrementarContador()">Incrementar</button>
+
+    <script>
+        // Función para incrementar el contador
+        function incrementarContador() {
+            // Obtener el elemento del contador
+            var contadorElemento = document.getElementById("contador");
+
+            // Obtener el valor actual del contador y convertirlo a un número
+            var valorActual = parseInt(contadorElemento.textContent);
+
+            // Incrementar el valor
+            valorActual++;
+
+            // Actualizar el texto del contador
+            contadorElemento.textContent = valorActual;
+        }
+    </script>
+
+</body>
+</html>

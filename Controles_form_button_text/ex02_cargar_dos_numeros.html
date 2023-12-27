@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    form {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+    }
+
+    input {
+        width: calc(100% - 16px);
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #29aab92d;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="form">
+            <form>
+                <label for="numero1">Ingresa el número:</label>
+                <input type="text" id="numero1" name="numero" placeholder="Introduce el primer numero" required>
+
+                <label for="numero1">Ingresa el número:</label>
+                <input type="text" id="numero2" name="numero" placeholder="Introduce el segundo numero" required>
+
+                <button type="button" onclick="Comparacion()">Ver resultado</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function Comparacion(){
+            let num1 = document.getElementById('numero1').value;
+            let num2 = document.getElementById('numero2').value;
+
+            if(num1 > num2){
+                alert('El primer numero ingresado es mayor!');
+            }else{
+                alert('El segundo numero ingresado es mayor!')
+            }
+        }
+    </script>
+</body>
+</html>

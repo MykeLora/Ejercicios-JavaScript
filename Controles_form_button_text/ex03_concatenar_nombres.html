@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        input {
+            padding: 8px;
+            font-size: 16px;
+        }
+        label{
+            font-size: 20px;
+            margin-block: 12px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px ;
+            border-radius: 5px;
+            border: 10px solid color(srgb red green blue);
+        }
+
+        #resultado {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+    <title>Unir nombre y apellido</title>
+</head>
+<body>
+    <h1>Unir nombre y apellido</h1>
+
+    <label for="nombre">Ingresa el nombre:</label>
+    <input type="text" id="nombre"  required/>
+    
+    <label for="apellido">Ingresa el apellido:</label>
+    <input type="text" id="apellido" required />
+
+    <br>
+
+    <button onclick="mostrarNombre()">Ver nombre completo</button>
+
+    <div id="resultado"></div>
+
+    <script>
+        function mostrarNombre() {
+            var nombre = document.getElementById('nombre').value.trim();
+            var apellido = document.getElementById('apellido').value.trim();
+
+            if (nombre === "") {
+                document.getElementById('resultado').innerText = 'El campo nombre no puede estar vacío ';
+            } else if (apellido === "") {
+                document.getElementById('resultado').innerText = "El campo apellido no puede estar vacío ";
+            } else {
+                document.getElementById('resultado').innerText = `El nombre completo es ${nombre.toUpperCase()} ${apellido.toUpperCase()}`;
+            }
+        }
+    </script>
+</body>
+</html>

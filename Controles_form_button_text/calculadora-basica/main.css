@@ -1,0 +1,56 @@
+ /* Personalización adicional con CSS */
+ body {
+    padding: 20px;
+    
+}
+.form-label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:x-large ;
+    font-style: oblique;
+
+    border: radius 5px; 
+    margin-right: 5px;
+}
+.object-fit-md-contain{
+    position: relative;
+    margin: auto;
+
+}
+
+.custom-form {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    border-radius: 15px;
+
+}
+
+.result-box {
+    padding: 10px;
+    background-color: #f8f9fa; /* Color de fondo de Bootstrap */
+    border: 1px solid #ced4da; /* Borde de Bootstrap */
+    border-radius: 5px; /* Esquinas redondeadas de Bootstrap */
+}
+
+.custom-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.calc-button {
+    flex: 1;
+    background-color: #28a745; /* Verde de Bootstrap */
+    color: #fff; /* Texto blanco */
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #218838; /* Borde de Bootstrap */
+    border-radius: 5px; /* Esquinas redondeadas de Bootstrap */
+}
+
+/* Estilo adicional para resaltar el botón al pasar el ratón */
+.calc-button:hover {
+    background-color: #218839; /* Verde más oscuro al pasar el ratón */
+}

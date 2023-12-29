@@ -7,7 +7,7 @@ function sumar() {
         document.getElementById('resultado').innerText = 'Ingresa números válidos';
     } else {
         var suma = num1 + num2;
-        document.getElementById('resultado').innerText = suma;
+        document.getElementById('resultado').innerText = suma.toLocaleString();
     }
 }
 
@@ -20,7 +20,7 @@ function resta(){
         document.getElementById('resultado').innerText = 'Asegúrese de utilizar números positivos';
     } else {
         var resta = num1 - num2;
-        document.getElementById('resultado').innerText = resta;
+        document.getElementById('resultado').innerText = resta.toLocaleString();
     }
 }
 
@@ -33,7 +33,7 @@ function producto(){
         document.getElementById('resultado').innerText = 'Asegúrese de utilizar números positivos';
     } else {
         var producto = num1 * num2;
-        document.getElementById('resultado').innerText = producto;
+        document.getElementById('resultado').innerText = producto.toLocaleString();
     }
 }
 
@@ -47,7 +47,7 @@ function dividir(){
         document.getElementById('resultado').innerText = 'Asegúrese de utilizar números positivos';
     } else {
         var division = num1 / num2;
-        document.getElementById('resultado').innerText = division;
+        document.getElementById('resultado').innerText = division.toLocaleString();
     }
 }
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de clave</title>
+
+    <style>
+
+        body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    form {
+        width: 300px;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    button {
+        background-color: #3498db;
+        color: white;
+        padding: 10px;
+        border: none;
+        margin: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #295bb9ee;
+    }
+    </style>
+</head>
+<body>
+
+    <!--
+        Disponer dos campos de texto tipo password. Cuando se presione un botón mostrar si
+         las dos claves ingresadas son iguales o no (es muy común solicitar al operador el
+        ingreso de dos veces de su clave para validar si las escribió correctamente,
+        esto se hace cuando se crea una password para el ingreso a un sitio o para el cambio de una existente).
+        Tener en cuenta que podemos emplear el operador == para ver si dos string son iguales.
+    -->
+
+    <div class="container">
+        <div class="form-control">
+            <form>
+                <label for="clave1" id="clave1">Ingresa la contraseña</label>
+                <input type="password" value="primer-clave"  id="clav1" required ="ingresa la clave">
+                <br>
+                <label for="clave2" id="clave2">Verifique la contraseña</label>
+                <input type="password" value="segunda-clave" id="clav2" required placeholder="Verifica si la clave ingresada es correcta">
+
+                <button class="btn-m-4" onclick="verificar()"> Verificar contraseña</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function verificar(){
+            var clave1 = document.getElementById('clav1').value;
+            var clave2 = document.getElementById('clav2').value;
+
+            if(clave1 == clave2){
+                alert('La clave ha sido ingresada correctamente');
+            }else{
+                alert('La clave es incorrecta verifique nuevamente')
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

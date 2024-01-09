@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>cambiarColor</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <form>
+        <p>
+            <select id="categorySelect" onChange="cambiarColor()";
+                <option value="1">Opción 1</option>
+                <option value="2">Opción 2</option>
+                <option value="3">Opción 3</option>
+            </select>
+       </p>
+        <p>Número de índice seleccionado del objeto SELECT:<input type="text" id="text1"></p>
+        <p>Texto seleccionado:<input type="text" id="text2"></p>
+        <p> Valor asociado:<input type="text" id="text3"></p>
+    </form>
+
+    <script>
+        function cambiarColor() {
+            document.addEventListener("DOMContentLoaded", () => {
+            const categorySelect = document.getElementById("categorySelect");
+
+            // Obtén el valor seleccionado
+            const selectedValue = categorySelect.value;
+            console.log("Valor seleccionado:", selectedValue);
+
+            // Cambia el valor seleccionado
+            categorySelect.value = "2"; // Cambia la selección a la opción con value="2"
+
+            // Agrega una nueva opción al select
+            const newOption = document.createElement("option");
+            newOption.value = "4";
+            newOption.textContent = "Opción 4";
+            categorySelect.appendChild(newOption);
+
+            // Elimina la última opción del select
+            categorySelect.remove(categorySelect.length - 1);
+        });}
+
+    </script>
+
+</body>
+
+</html>

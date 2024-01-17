@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--: Solicitar la carga del mail y el curriculum de una persona. Mostrar un mensaje si el curriculum supera los 2000 caracteres.-->
+
+    <form>
+        <p><textarea name="currriculum" id="curriculum" cols="50" rows="10"></textarea></p>
+        <p><input type="button" value="Mostrar" onclick="controlarCaracteres()"></p>
+    </form>
+
+    <script>
+        function controlarCaracteres(){
+            if(document.getElementById("curriculum").value.length > 2000){
+                alert('Curriculum muy largo');
+            }else{
+                alert('Datos correctos');
+            }
+        }
+    </script>
+</body>
+</html>

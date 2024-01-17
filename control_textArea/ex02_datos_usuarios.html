@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!--Confeccionar una página de visitas a un sitio, solicitar ingresar el nombre de una persona, su mail y los comentarios (TEXTAREA). Mostrar luego llamando a la función alert los datos ingresados.-->
+
+    <form>
+        <label for="nombre" id="nombres">Ingresa tu nombre: </label>
+        <input type="text" id="nombre">
+        <br>
+        <label for="correo" id="correos">Ingresa tu correo Electrónico: </label>
+        <input type="email" id="correo">
+        <br>
+        <label for="comentario" id="comentario">Cuentanos que tal la pasaste en el sitio:</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea>
+        <br>
+        <input type="button" id="Mostrar" value="Mostrar" onclick="MostrarDatos()">
+
+    </form>
+
+    <script>
+        function MostrarDatos(){
+            const nombre = document.getElementById('nombre').value;
+            const correo = document.getElementById('correo').value;
+            const comentario = document.getElementById('comentarios').value;
+
+            if(nombre  && correo && comentario){
+                alert('El nombre es: '+nombre + ' su correo: '+correo+ ' y su comentario: '+comentario);
+            }else{
+                alert('Asegurate de llenar todos los campos del formulario!')
+            }
+        }
+    </script>
+</body>
+</html>

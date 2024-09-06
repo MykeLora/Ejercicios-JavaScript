@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Estilo para el cuerpo del documento */
+        body {
+            font-family: Arial, sans-serif; /* Utilizamos la fuente Arial como fuente principal */
+            background-color: #f2f2f2; /* Establecemos un color de fondo para el cuerpo */
+            margin: 0; /* Eliminamos el margen predeterminado del cuerpo */
+            padding: 0; /* Eliminamos el relleno predeterminado del cuerpo */
+        }
+
+        /* Estilo para el contenedor principal */
+        .container {
+            display: flex; /* Utilizamos flexbox para centrar el contenido vertical y horizontalmente */
+            justify-content: center; /* Centramos el contenido horizontalmente */
+            align-items: center; /* Centramos el contenido verticalmente */
+            height: 100vh; /* Establecemos la altura del contenedor al 100% del viewport height para que ocupe toda la pantalla */
+        }
+
+        /* Estilo para las etiquetas de texto */
+        .label {
+            color: darkcyan; /* Establecemos el color del texto */
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Utilizamos una fuente alternativa si la primera no está disponible */
+            font-size: large; /* Establecemos el tamaño del texto */
+            margin-right: 10px; /* Añadimos un margen derecho para separar la etiqueta del select */
+        }
+
+        /* Estilo para el select */
+        #clima {
+            border: 2px solid orange; /* Establecemos un borde sólido de 2px con color naranja */
+            border-radius: 5px; /* Agregamos bordes redondeados */
+            background-color: white; /* Establecemos un color de fondo blanco */
+            padding: 5px 10px; /* Añadimos relleno alrededor del contenido del select */
+            font-size: medium; /* Establecemos el tamaño de la fuente */
+        }
+
+        /* Estilo para las opciones del select */
+        #clima option {
+            background-color: white; /* Establecemos un color de fondo blanco para las opciones */
+            color: black; /* Establecemos el color del texto */
+        }
+    </style>    
+
+</head>
+<body>
+    
+<div class="container">
+    <label class="label" for="clima">Selecciona el tipo de clima de hoy:</label>
+    <select id="clima">
+        <option value="">--Haga una elección--</option>
+        <option value="soleado">Soleado</option>
+        <option value="lluvioso">Lluvioso</option>
+        <option value="nevando">Nevando</option>
+        <option value="nublado">Nublado</option>
+    </select>
+    <p></p>
+</div>
+
+<script>
+    let seleccion = document.querySelector("#clima");
+    let parrafo = document.querySelector("p");
+
+    seleccion.addEventListener("change", establecerClima);
+
+    function establecerClima() {
+        let eleccion = seleccion.value;
+
+        if (eleccion === "soleado") {
+            parrafo.textContent = "El día está agradable y soleado hoy. ¡Use pantalones cortos! Ve a la playa o al parque y come helado.";
+        } else if (eleccion === "lluvioso") {
+            parrafo.textContent = "Está lloviendo. Tome un abrigo para la lluvia y un paraguas, y no se quede fuera mucho tiempo.";
+        } else if (eleccion === "nevando") {
+            parrafo.textContent = "Está nevando - ¡está congelando! Lo mejor es quedarse en casa y tomarse una taza de chocolate, o hacer un muñeco de nieve.";
+        } else if (eleccion === "nublado") {
+            parrafo.textContent = "No está lloviendo, pero el cielo está gris y nublado; podría llover en cualquier momento, así que lleve un sao solo por si acaso.";
+        } else {
+            parrafo.textContent = "";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar hora actual</title>
+
+    <style>
+        div{
+            color: rgb(25, 0, 255);
+            background-color: aliceblue;
+            font-size: larger;
+            margin: 12px 4px;
+        }
+    </style>
+</head>
+<body onload="mostrarHora()">
+    
+    <div id="despliegue"></div>
+
+    <script>
+        function mostrarHora(){
+            
+            let hora_actual = new Date();
+            let hora = hora_actual.getHours();
+            let minutos = hora_actual.getMinutes();
+            let segundos = hora_actual.getSeconds();
+
+            document.getElementById("despliegue").innerText = "Esta es la hora actual: " + hora + ":" + minutos + ":" + segundos;
+        }
+    </script>
+</body>
+</html>

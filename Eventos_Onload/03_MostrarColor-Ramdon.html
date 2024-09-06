@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color de fondo aleatorio</title>
+</head>
+<body onload="cambiarColorDeFondo()">
+    
+    <script>
+        
+        function cambiarColorDeFondo() {
+
+            let colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+
+            while (colorAleatorio.length < 7) {
+                colorAleatorio = '#' + Math.floor(Math.random()*16777215).toString(16);
+            }
+
+            document.body.style.backgroundColor = colorAleatorio;
+        }
+    </script>
+
+</body>
+</html>
